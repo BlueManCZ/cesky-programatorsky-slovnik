@@ -30,7 +30,6 @@ new = sys.argv[2]
 with open(dictionary) as dictionary_file:
     dictionary_words = dictionary_file.read().splitlines()
 
-
 with open(new) as new_file:
     new_words = new_file.read().splitlines()
 
