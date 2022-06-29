@@ -5,9 +5,11 @@ import shutil
 import sys
 
 if len(sys.argv) < 3:
-    print("Spouštějte tento skript se dvěma argumenty. "
-          "První je slovník, do kterého chcete přidávat slova. "
-          "Druhý je soubor obsahující nová slova.")
+    print(
+        "Spouštějte tento skript se dvěma argumenty. "
+        "První je slovník, do kterého chcete přidávat slova. "
+        "Druhý je soubor obsahující nová slova."
+    )
     quit()
 
 DIACRITICS = "ěščřžýáíéúůóťďňĚŠČŘŽÝÁÍÉÚŮŤĎŇ"
@@ -52,4 +54,4 @@ with open(dictionary, "w") as file:
     file.write("\n".join(dictionary_words) + "\n")
 
 print(f"Nový slovník obsahuje {len(dictionary_words)} slov.\n")
-print(f"Původní slovník zálohován do \"{dictionary}.{timestamp}.old\"")
+print(f'Původní slovník zálohován do "{dictionary}.{timestamp}.old"')
